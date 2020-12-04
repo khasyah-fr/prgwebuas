@@ -6,7 +6,7 @@
         </div>
 
         <div class="flex justify-between items-center mb-6">
-            <div>
+            <div style="max-width: 300px">
                 <h2 class="font-bold text-2xl mb-0">{{ $user->name }}</h2>
                 <h2 class="text-sm">Since {{ $user->created_at->diffForHumans() }}</h2>
             </div>
@@ -20,9 +20,22 @@
         </div>
         <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci aut beatae consequatur ducimus eveniet laboriosam nam, nostrum, possimus provident, quae ratione temporibus. Aspernatur cumque deserunt dolor dolore expedita, facilis, incidunt inventore iure molestias natus nostrum officia omnis qui quibusdam rerum similique temporibus totam vitae voluptas voluptatibus! Magnam, nemo ullam.</p>
 
+        <div class="flex justify-between mt-4">
+            <div class="mr-4">
+                <h2 class="text-lg mb-0 font-bold">Following count: {{ current_user()->follows()->count() }}</h2>
+            </div>
+            <div>
+                <h2 class="text-lg mb-0 font-bold">Followers count: {{ $user->follows()->count() }}</h2>
+            </div>
+            <div>
+                <h2 class="text-lg mb-0 font-bold">Posts count: {{ current_user()->tweets()->count() }}</h2>
+            </div>
+        </div>
+
+
     </header>
 
     @include('_timeline', [
-      'tweets' => $user->tweets
+      'tweets' => $tweets
     ])
 </x-app>

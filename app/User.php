@@ -47,7 +47,7 @@ class User extends Authenticatable
 //        return Tweet::where('user_id', $this->id)->latest()->get();
         $ids = $this->follows()->pluck('id');
 
-        return Tweet::whereIn('user_id', $ids)->orWhere('user_id', $this->id)->latest()->get();
+        return Tweet::whereIn('user_id', $ids)->orWhere('user_id', $this->id)->latest()->paginate(20);
     }
 
     public function tweets(){

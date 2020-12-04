@@ -29,6 +29,6 @@ Route::middleware('auth')->group(function (){
 
 Route::get('/profiles/{user:username}', 'ProfileController@show')->name('profile');
 
-Route::get('/explore', 'ExploreController@index');
+Route::get('/explore', 'ExploreController');
 
 Auth::routes();

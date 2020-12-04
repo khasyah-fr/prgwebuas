@@ -4,4 +4,6 @@
         @empty
         <p class="p-4">There is no tweets yet.</p>
     @endforelse
+
+    {{$tweets->links('pagination::tailwind')}}
 </div>

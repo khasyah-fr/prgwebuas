@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 
 class ExploreController extends Controller
 {
-    public function index(){
+    public function __invoke(){
         return view('explore', [
-            'users' => User::paginate(50),
+            'users' => User::paginate(48),
         ]);
     }
 }
