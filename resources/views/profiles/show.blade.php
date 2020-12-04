@@ -2,7 +2,7 @@
     <header class="mb-6">
         <div class="relative">
             <img class="rounded-3xl mb-2" src="/images/banner-profil.png" alt="">
-            <img src="{{ $user->avatar }}" alt="" class="absolute rounded-full mr-2 bottom-0 transform -translate-x-1/2 translate-y-1/2 " width="140" style="left: 50%">
+            <img src="{{ $user->avatar }}" alt="" class="absolute rounded-full mr-2 bottom-0 transform -translate-x-1/2 translate-y-1/2 border-4 border-blue-400 bg-white" style="left: 50%; width: 140px; height: 140px;">
         </div>
 
         <div class="flex justify-between items-center mb-6">
