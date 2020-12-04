@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f2f4de4-26d7-4a9f-aad3-90c278591c65" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profiles/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profiles/edit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +190,7 @@
       <workItem from="1606996562298" duration="10520000" />
       <workItem from="1607014989715" duration="367000" />
       <workItem from="1607015399253" duration="418000" />
-      <workItem from="1607033308886" duration="18730000" />
+      <workItem from="1607033308886" duration="19060000" />
     </task>
     <servers />
   </component>
