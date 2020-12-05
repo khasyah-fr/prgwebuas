@@ -42,22 +42,7 @@
                             <p class="text-red-500 text-xs mt-2">{{ $message }}</p>
                             @enderror
                         </div>
-{{--                        <div class="form-group row">--}}
-{{--                            <label for="password"--}}
-{{--                                   class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>--}}
 
-{{--                            <div class="col-md-6">--}}
-{{--                                <input id="password" type="password"--}}
-{{--                                       class="form-control @error('password') is-invalid @enderror" name="password"--}}
-{{--                                       required autocomplete="new-password">--}}
-
-{{--                                @error('password')--}}
-{{--                                <span class="invalid-feedback" role="alert">--}}
-{{--                                            <strong>{{ $message }}</strong>--}}
-{{--                                        </span>--}}
-{{--                                @enderror--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
                         <div class="mb-6">
                             <label for="password-confirm" class="mb-2 uppercase block font-bold text-gray-700 text-xs">Password Confirmation</label>
                             <input type="password" class="border border-gray-400 p-2 w-full rounded-2xl focus:outline-none" name="password_confirmation" id="password_confirmation" required autocomplete="new-password">
@@ -66,15 +51,6 @@
                             <p class="text-red-500 text-xs mt-2">{{ $message }}</p>
                             @enderror
                         </div>
-{{--                        <div class="form-group row">--}}
-{{--                            <label for="password-confirm"--}}
-{{--                                   class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>--}}
-
-{{--                            <div class="col-md-6">--}}
-{{--                                <input id="password-confirm" type="password" class="form-control"--}}
-{{--                                       name="password_confirmation" required autocomplete="new-password">--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
 
                         <div class="mb-1">
                             <button type="submit"
