@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Auth::routes(['verify' => true]);
+
 Route::middleware('auth')->group(function (){
     Route::get('/tweets', 'TweetController@index')->name('home');
     Route::post('/tweets', 'TweetController@store');
@@ -33,5 +35,3 @@ Route::middleware('auth')->group(function (){
 Route::get('/profiles/{user:username}', 'ProfileController@show')->name('profile');
 
 Route::get('/explore', 'ExploreController');
-
-Auth::routes();
